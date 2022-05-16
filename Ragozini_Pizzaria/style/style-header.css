@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'great-vibes';
+    src: url(../fonts/GreatVibes-Regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: 'ubuntu-mono';
+    src: url(../fonts/UbuntuMono-Regular.ttf) format("truetype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.principal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+
+    background-color: aquamarine;
+    width: auto;
+    height: 5rem;
+}
+
+.content-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+
+    width: 30%;
+    height: auto;
+}
+
+.title-site{
+    font-size: 3rem;
+}
+
+.title-ragozini{
+    font-family: 'great-vibes';
+    color: rgb(255, 47, 47);
+}
+
+.title-pizzaria{
+    color: rgb(255, 118, 68);
+}
+
+.ragozini-logo{
+    background-color: white;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+}
+
+.principal-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aqua;
+    width: auto;
+    height: 3rem;
+}
+
+.content-links{/*Contem os links da nav principal*/
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 1rem;
+
+    width: 30%;
+    height: 100%;
+
+}
+
+.link-base{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.principal-links{
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid white;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.principal-links:hover{
+    background-color: white;
+    padding: 0.6rem 0.5rem;
+    border-bottom: 1px solid blue;
+    transition-duration: 0.5s;
+
+    color: aqua;
+    opacity: 0.9;
+}
+
+.button-menu{
+    display: none;
+
+    background-color:aqua;
+    border: none;
+    width: 4rem;
+    height: 2.9rem;
+
+    position: relative;
+    left: 30%;
+
+    border: 1px solid mediumaquamarine;
+}
+
+.button-menu:hover{
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid white;
+    transition-duration: 0.5s;
+
+    color: aqua;
+    opacity: 0.9;
+}
+
+.button-menu:active{
+    background-color: rgb(197, 197, 197);
+    transition-duration: 0.2s;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px){
+    .ragozini-logo{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .title-site{
+        font-size: 2rem;
+    }
+
+    .content-links{
+        width: 30%;
+        column-gap: 1rem;
+    }
+
+    .principal-links{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 400px){
+    .principal-header{
+        height: 3rem;
+    }
+
+    .principal-nav{
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .content-links{
+        display: none;
+    }
+
+    .button-menu{
+        display: inline-block;
+    }
+}
