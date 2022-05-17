@@ -1,2 +1,133 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: 'great-vibes';
+    src: url(../fonts/GreatVibes-Regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: 'ubuntu-mono';
+    src: url(../fonts/UbuntuMono-Regular.ttf) format("truetype");
+}
+
+.principal-main{
+    grid-column: 3/11;
+    box-shadow: -1px 1px 5px black;
+}
+
+.propagand-pizza-big{
+    grid-column: 1/13;
+    width: 100%;
+    height: 30rem;
+}
+
+.container-apresentation{
+    background-color: white;
+    width: 24%;
+    height: 15rem;
+    border-top: 3px solid rgb(252, 71, 71);
+    border-right: 3px solid rgb(252, 71, 71);
+    border-left: 3px solid rgb(252, 71, 71);
+    border-bottom: 2px solid rgb(201, 201, 201);
+    border-radius: 1rem;
+
+    position: absolute;
+    z-index: 1;
+    top: 27rem;
+    left: 38%;
+
+    text-align: center;
+}
+
+.link-apresentation{
+    background-color: aquamarine;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+    position: relative;
+    top: 15%;
+
+    font-size: 2rem;
+}
+
+.link-apresentation:first-child{
+    margin-right: 1rem;
+}
+
+.link-apresentation:hover{
+    background-color: white;
+    border: 1px solid aqua;
+    transition-duration: 0.5s;
+
+    color: aqua;
+    opacity: 0.9;
+}
+
+.link-apresentation:active{
+    background-color: rgb(163, 163, 163);
+    transition-duration: 0.5s;
+}
+
+.apresentation-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-pizza-img{
+    display: flex;
+    justify-content: space-around;
+
+    width: 77.5rem;
+    height: 20rem;
+    margin-top: 10%;
+}
+
+.propagand-pizza-small{
+    width: 30rem;
+    height: 19rem;
+    border: 0.5rem outset rgb(168, 70, 70);
+}
+
+.container-comments{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    width: 77.5rem;
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+.container-comment{
+    display: flex;
+    align-items: center;
+
+    border: 2px solid rgb(78, 78, 78);
+    width: 40%;
+    height: 30%;
+    border-radius: 5rem;
+}
+
+.icon-person-comment{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+    border: 4px solid black;
+    border-radius: 50%;
+}
+
+.text-comment{
+    font-family: 'ubuntu-mono';
+}
+
+.container-addres{
+    width: 37%;
+    height: 12%;
+    border: 1px solid black;
+
+    position: relative;
+    left: 32%;
+}
+
+.addres{
+    font-size: 1.5rem;
+}
