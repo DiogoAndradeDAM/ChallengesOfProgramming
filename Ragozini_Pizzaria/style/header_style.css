@@ -1,13 +1,27 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: "great-vibes";
+    src: url("../fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+:root{
+    --red: #EB2928;
+    --red2: #B81F1F;
+    --orange: #F2531D;
+    --yellow: #EBCF23;
+    --yellow2: #F2B11D;
+}
+
 header{
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--red2);
+    border: 1px solid var(--red);
     grid-column: 1/13;
 
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 80px;
 }
 
 header > .title-header{
@@ -20,11 +34,13 @@ header > .title-header{
 }
 
 .title-header h1:first-child{
-    color: orange;
+    color: var(--yellow2);
 }
 
 .title-header h1:last-child{
-    color: red;
+    color: rgb(255, 0, 0);
+    font-family: "great-vibes";
+    font-size: 40px;
 }
 
 header > .logo-site{
@@ -42,8 +58,7 @@ header > .logo-site{
 }
 
 nav{
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--red);
     grid-column: 1/13;
 
     display: flex;
@@ -59,4 +74,33 @@ nav > .center-flex{
     gap: 10px;
 
     width: 20%;
+}
+
+.center-flex a{
+    font-size: 25px;
+    color: rgb(226, 253, 105);
+}
+
+.center-flex a:hover{
+    transition-duration: 0.3s;
+    color: var(--yellow);
+}
+
+nav > button{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 10%;
+
+    visibility: hidden;
+}
+
+@media screen and (max-width: 800px){
+    nav > button{
+        visibility: visible;
+    }
+
+    nav > .center-flex{
+        visibility: hidden;
+    }
 }

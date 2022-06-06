@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+footer{
+    background-color: var(--red);
+    grid-column: 1/13;
+}
+
+.center-text{
+    text-align: center;
+}
